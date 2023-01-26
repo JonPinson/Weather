@@ -22,7 +22,10 @@ export default function App() {
       <Text style={styles.text}>Open up App.js to start working on your app!</Text>
       
       <WeatherSummary />
-      <Icon name="wi-night-alt-snow" style={styles.icon} />    
+    <View>
+      <Icon name="wi-night-alt-snow" style={styles.icon} />  
+    
+    </View>  
       <WeatherDetail />
 
       <WeatherHourly />
