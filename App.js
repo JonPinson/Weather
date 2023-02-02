@@ -6,6 +6,7 @@ import WeatherDetail from './components/WeatherDetail';
 import WeatherHourly from './components/WeatherHourly';
 import WeatherSummary from './components/WeatherSummary';
 
+
 export default function App() {
 
   const [loaded] = useFonts (
