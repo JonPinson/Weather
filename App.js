@@ -5,7 +5,7 @@ import Icon from './weatherIcon';
 import WeatherDetail from './components/WeatherDetail';
 import WeatherHourly from './components/WeatherHourly';
 import WeatherSummary from './components/WeatherSummary';
-
+import data from './data';
 
 export default function App() {
 
@@ -18,9 +18,10 @@ export default function App() {
     return null;
   }
 
+
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.text}>Open up App.js to start working on your app!</Text>
+      <Text style={styles.text}>{data.current.temp}</Text>
       
       <WeatherSummary />
     <View>
@@ -44,8 +45,9 @@ const styles = StyleSheet.create({
  //   alignItems: 'center',
  //   justifyContent: 'center',
   },
-  Text: {
-    color: '#fff'
+  text: {
+    color: '#fff',
+    fontSize: 75
   },
 
   icon: {
