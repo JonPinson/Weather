@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
       
       },
       detailContainer: {
+        flexWrap: "wrap",
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'

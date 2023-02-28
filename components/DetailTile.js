@@ -5,9 +5,9 @@ import Icon from '../weatherIcon'
 export const DetailTile = ({iconName, title, data}) => {
   return (
     <View style={styles.tileContainer}>
-        <Icon name={iconName} />
-        <Text>{title}</Text>
-        <Text>{data}</Text>
+        <Icon name={iconName} size={26} color={'white'} />
+        <Text style={styles.detailText}>{title}</Text>
+        <Text style={styles.detailText}>{data}</Text>
     </View>
   )
 }
@@ -17,6 +17,13 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '30%'
+    width: '30%',
+    backgroundColor: '#333',
+    margin: 4
+  },
+  detailText: {
+    color: 'white',
+    fontSize: 16
   }
+  
 });
