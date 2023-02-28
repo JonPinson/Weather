@@ -15,7 +15,11 @@ const ColorConstants = {
 
     normal: isDarkMode ? '#cccccc' : '#cccccc',
     title: isDarkMode ? '#666666' : '#666666',
-    highlight: isDarkMode ? 'lightblue' : 'lightblue'
+    highlight: isDarkMode ? 'lightblue' : 'lightblue',
+
+    backgroundDark: '#333333',
+    backgroundMed: '#666666'
+
 };
 
 const SizeConstants = {

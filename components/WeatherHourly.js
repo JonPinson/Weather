@@ -1,10 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
+import { Hour} from './Hour'
+import data from '../data';
 
 export default function WeatherHourly() {
   return (
     <View>
-      <Text style={styles.text}>WeatherHourly</Text>
+      <Text style={styles.text}>Hourly</Text>
+      <FlatList 
+        horizontal
+        data={data.hourly}
+        renderItem={({item}) => <Hour hour={item}/> }
+        keyExtractor={(item, index) => index}
+      />
     </View>
   )
 }
