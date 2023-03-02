@@ -4,16 +4,38 @@ import heroImage from '../assets/moon-Cloud-cropped.jpg';
 import { FontConstants } from '../globalStyles.js/globalStyles';
 import { SizeConstants } from '../globalStyles.js/globalStyles';
 import { ColorConstants } from '../globalStyles.js/globalStyles';
+import data from '../data';
 
 export default function WeatherSummary() {
+
+let windDirection = "";
+let d = data.current.wind_deg;
+switch (d) {
+  case ( d>315 || d<45):
+    windDirection = "North";
+  case ( d>=45 && d<135):
+    windDirection = "East";
+  case ( d>=135 && d<225):
+    windDirection = "South";
+  case ( d>=225 && d<315):
+    windDirection = "West";
+}
+
+
+
+
   return (
     <View style={styles.heroContainer}>
       <Text style={styles.text}>Good Afternoon</Text>
       <Image source={heroImage} style={styles.hero} />
       <View style={styles.tempContainer}>
-        <Text style={styles.highTemp}>46{'\u00b0'}F</Text>
-        <Text style={styles.lowTemp}>/33{'\u00b0'}F</Text>
-
+      <Text style={styles.highTemp}>{Math.round(data.daily[0].temp.max)}{'\u00b0'}F</Text>
+        <Text style={styles.lowTemp}>{'\u2215'}{Math.round(data.daily[0].temp.min)}{'\u00b0'}F</Text>
+      </View>
+      <View>
+        <Text style={styles.textLocation}>Huntington, WV</Text>
+       {data.current.weather[0].main === "Clear" ? (<Text style={styles.textSmall}>Clear skies with a temperature of {Math.round(data.current.temp)}{'\u00b0'}F.</Text>) : (<Text>Partly cloudy with a temperature of {data.current.temp}</Text>)}
+      <Text style={styles.textSmall}>Winds of {Math.round(data.current.wind_speed)} Mph from the {windDirection}.</Text>
       </View>
     </View>
   )
@@ -29,6 +51,19 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
 
+    textLocation: {
+        color: 'white',
+        fontSize: 30,
+
+
+    },
+
+
+    textSmall: {
+        color: 'white',
+        fontsize: 14
+
+      },
     tempContainer: {
       flexDirection: 'row',
       width: '90%',
