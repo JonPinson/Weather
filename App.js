@@ -5,6 +5,7 @@ import Icon from './weatherIcon';
 import WeatherDetail from './components/WeatherDetail';
 import WeatherHourly from './components/WeatherHourly';
 import WeatherSummary from './components/WeatherSummary';
+import { WeatherDaily } from './components/WeatherDaily';
 import data from './data';
 import { Hour } from './components/Hour';
 
@@ -30,6 +31,8 @@ export default function App() {
       <WeatherDetail />
 
       <WeatherHourly />
+
+      <WeatherDaily />
     
       <StatusBar style="auto" />
     </ScrollView>
