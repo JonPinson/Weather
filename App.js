@@ -55,7 +55,7 @@ export default function App() {
 
       <WeatherDaily data={data} />
 
-      {/* <Sun data={data} /> */}
+      <Sun data={data} />
     
       <StatusBar style="auto" />
     </ScrollView>
