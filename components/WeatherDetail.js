@@ -3,7 +3,7 @@ import React from 'react'
 import { DetailTile } from './DetailTile'
 
 
-export default function WeatherDetail() {
+export default function WeatherDetail({data}) {
   return (
     <View>
       <Text style={styles.text}>Detail</Text>

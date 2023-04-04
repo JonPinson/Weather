@@ -13,6 +13,7 @@ import { WeatherDaily } from './components/WeatherDaily';
 import { Hour } from './components/Hour';
 import { Sun } from './components/Sun';
 
+
 export default function App() {
 
   const [data, setData] = useState(null);
@@ -26,7 +27,7 @@ export default function App() {
       console.log(response);
       setData(response.data);
     }).catch((error) => {
-      console.log(response)
+      console.log(error)
     });
   }, [] )
 

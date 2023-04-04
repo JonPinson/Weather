@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Day } from './Daily';
 
-export const WeatherDaily = () => {
+export const WeatherDaily = ({data}) => {
   return (
     <View>
       <Text style={styles.text}>Daily</Text>

@@ -3,7 +3,7 @@ import React from 'react'
 import { Hour} from './Hour'
 
 
-export default function WeatherHourly() {
+export default function WeatherHourly({data}) {
   return (
     <View>
       <Text style={styles.text}>Hourly</Text>
