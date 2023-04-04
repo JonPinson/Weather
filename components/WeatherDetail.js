@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, } from 'react-native'
 import React from 'react'
 import { DetailTile } from './DetailTile'
-import data from '../data'
+
 
 export default function WeatherDetail() {
   return (

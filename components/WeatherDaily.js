@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import data from '../data';
 import { Day } from './Daily';
 
 export const WeatherDaily = () => {

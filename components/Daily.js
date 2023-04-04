@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet} from 'react-native';
 import { SizeConstants, ColorConstants } from '../globalStyles.js/globalStyles';
-import { iconList } from '../weatherHelper';
+import { iconList } from '../WeatherHelper';
 import Icon from '../weatherIcon';
 import data from '../data';
 
@@ -26,12 +26,19 @@ width: '18%',
 backgroundColor: '#333',
 margin: 4,
 
-
 },
+
 detailText: {
 color: 'white',
 fontSize: 16
+},
+
+icon: {
+  color: 'lightblue',
+  size: '55'
 }
+
+
 
 });
 

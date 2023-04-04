@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet} from 'react-native';
 import { SizeConstants, ColorConstants } from '../globalStyles.js/globalStyles';
-import { iconList } from '../weatherHelper';
+import { iconList } from '../WeatherHelper';
 import Icon from '../weatherIcon';
 
 export const Hour = ({hour}) => {

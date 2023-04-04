@@ -4,9 +4,9 @@ import heroImage from '../assets/moon-Cloud-cropped.jpg';
 import { FontConstants } from '../globalStyles.js/globalStyles';
 import { SizeConstants } from '../globalStyles.js/globalStyles';
 import { ColorConstants } from '../globalStyles.js/globalStyles';
-import data from '../data';
 
-export default function WeatherSummary() {
+
+export default function WeatherSummary({ data }) {
 
 let windDirection = "";
 let d = data.current.wind_deg;

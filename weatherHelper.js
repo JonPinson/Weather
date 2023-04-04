@@ -21,6 +21,7 @@ const iconList = {
 314:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
 321:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
 
+500:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
 501:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
 502:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
 503:    ['wi-day-thunderstorm', 'wi-night-thunderstorm'],
